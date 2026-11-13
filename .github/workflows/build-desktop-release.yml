@@ -225,6 +225,7 @@ jobs:
           include-hidden-files: true
 
   build-linux-x64:
+    if: false
     runs-on: ubuntu-22.04
     needs: [ compile-cljs ]
     steps:
@@ -285,6 +286,7 @@ jobs:
           path: builds
 
   build-linux-arm64:
+    if: false
     runs-on: ubuntu-22.04
     needs: [ compile-cljs ]
     steps:
@@ -404,6 +406,7 @@ jobs:
           path: builds
 
   build-windows-arm64:
+    if: false
     runs-on: windows-latest
     needs: [ compile-cljs ]
     steps:
@@ -482,6 +485,7 @@ jobs:
           path: builds
 
   build-macos-x64:
+    if: false
     needs: [ compile-cljs ]
     runs-on: macos-15-intel
     steps:
@@ -568,6 +572,7 @@ jobs:
           path: builds
 
   build-macos-arm64:
+    if: false
     needs: [ compile-cljs ]
     runs-on: macos-14
     steps:
